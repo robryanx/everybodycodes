@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"slices"
 
 	"github.com/robryanx/everybodycodes/util"
 )
@@ -14,7 +13,7 @@ func main() {
 	}
 
 	sum := 0
-	for pairs := range slices.Chunk(strs, 2) {
+	for pairs := range util.ChunkSeq(strs, 2) {
 		isPair := true
 		for _, char := range pairs {
 			switch char {

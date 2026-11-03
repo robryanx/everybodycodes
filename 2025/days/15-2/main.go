@@ -32,7 +32,7 @@ type instruction struct {
 }
 
 func main() {
-	rows, err := util.ReadStrings("15-2", false, "\n")
+	rows, err := util.ReadStrings("15-2", false, '\n')
 	if err != nil {
 		panic(err)
 	}

@@ -3,20 +3,20 @@ package util
 import "fmt"
 
 func PrintGrid(grid [][]byte) {
-	for y := 0; y < len(grid); y++ {
+	for y := range grid {
 		fmt.Printf("%s\n", string(grid[y]))
 	}
 }
 
 func PrintIntGrid(grid [][]int) {
-	for y := 0; y < len(grid); y++ {
+	for y := range grid {
 		fmt.Printf("%d\n", grid[y])
 	}
 }
 
 func CopyGrid(grid [][]byte, populate bool) [][]byte {
 	nextGrid := make([][]byte, len(grid))
-	for y := 0; y < len(grid); y++ {
+	for y := range grid {
 		nextGrid[y] = make([]byte, len(grid[0]))
 		if populate {
 			for x := 0; x < len(grid[0]); x++ {

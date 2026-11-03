@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	rowsIter, err := util.ReadInts("4-3", false, "\n")
+	rowsIter, err := util.ReadInts("4-3", false, '\n')
 	if err != nil {
 		panic(err)
 	}

@@ -14,7 +14,7 @@ var diagonals = [4][2]int{
 }
 
 func main() {
-	rows, err := util.ReadStrings("14-2", false, "\n")
+	rows, err := util.ReadStrings("14-2", false, '\n')
 	if err != nil {
 		panic(err)
 	}

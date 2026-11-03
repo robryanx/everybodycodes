@@ -14,7 +14,7 @@ func main() {
 
 	sum := 0
 
-	for _, char := range strs {
+	for char := range strs {
 		switch char {
 		case 'B':
 			sum++

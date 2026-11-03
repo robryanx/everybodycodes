@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	rows, err := util.ReadInts("16-1", false, ",")
+	rows, err := util.ReadInts("16-1", false, ',')
 	if err != nil {
 		panic(err)
 	}

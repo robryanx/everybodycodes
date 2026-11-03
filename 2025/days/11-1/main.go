@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	colsSeq, err := util.ReadInts("11-1", false, "\n")
+	colsSeq, err := util.ReadInts("11-1", false, '\n')
 	if err != nil {
 		panic(err)
 	}

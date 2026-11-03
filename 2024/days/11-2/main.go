@@ -11,7 +11,7 @@ import (
 var ruleRegex = regexp.MustCompile("^([A-Z]):([A-Z,]+)$")
 
 func main() {
-	rows, err := util.ReadStrings("11-2", false, "\n")
+	rows, err := util.ReadStrings("11-2", false, '\n')
 	if err != nil {
 		panic(err)
 	}

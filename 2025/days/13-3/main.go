@@ -14,7 +14,7 @@ type numRange struct {
 }
 
 func main() {
-	rows, err := util.ReadStrings("13-3", false, "\n")
+	rows, err := util.ReadStrings("13-3", false, '\n')
 	if err != nil {
 		panic(err)
 	}

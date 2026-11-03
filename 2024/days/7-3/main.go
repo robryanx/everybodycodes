@@ -20,7 +20,7 @@ var trackStr = `S+= +=-== +=++=     =+=+=--=    =-= ++=     +=-  =+=++=-+==+ =++
 --==++++==+=+++-= =-= =-+-=  =+-= =-= =--   +=++=+++==     -=+=++==+++-`
 
 func main() {
-	rows, err := util.ReadStrings("7-3", false, "\n")
+	rows, err := util.ReadStrings("7-3", false, '\n')
 	if err != nil {
 		panic(err)
 	}

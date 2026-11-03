@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	patternSeq, err := util.ReadInts("16-3", false, ",")
+	patternSeq, err := util.ReadInts("16-3", false, ',')
 	if err != nil {
 		panic(err)
 	}
